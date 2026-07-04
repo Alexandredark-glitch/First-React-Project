@@ -1,0 +1,120 @@
+.home {
+  padding: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-form {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.trending {
+  margin-top: 5rem; /* mt-20 -> 20 * 0.25rem */
+}
+
+.trending ul {
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  gap: 1.25rem; /* gap-5 -> 5 * 0.25rem */
+  margin-top: -2.5rem; /* -mt-10 -> -10 * 0.25rem */
+  width: 100%; /* w-full */
+  
+  /* Compiled from hide-scrollbar utility */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.trending ul::-webkit-scrollbar {
+  /* Compiled from hide-scrollbar utility */
+  display: none;
+}
+
+.trending ul li {
+  min-width: 230px; /* min-w-[230px] */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.trending ul li p {
+  color: #646cff;
+  margin-top: 22px; /* mt-[22px] */
+  white-space: nowrap; /* text-nowrap */
+  
+  /* Compiled from fancy-text utility */
+  -webkit-text-stroke: 5px rgba(206, 206, 251, 0.5);
+  font-size: 190px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.trending ul li img {
+  width: 127px; /* w-[127px] */
+  height: 163px; /* h-[163px] */
+  border-radius: 0.5rem; /* rounded-lg -> 8px */
+  object-fit: cover; /* object-cover */
+  margin-left: -0.875rem; /* -ml-3.5 -> -3.5 * 0.25rem */
+}
+
+.Popular-Movies {
+  margin-block: 2rem;
+  font-size: 2rem;
+  font:bold
+ 
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #666;
+}
+
+.search-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #e50914;
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: #f40612;
+}
+
+
+
+
+@media (max-width: 639px) {
+  .home {
+    padding: 1rem 0;
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+  }
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
